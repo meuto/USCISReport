@@ -13,6 +13,7 @@ emailTo='tomeu.clapes@gmail.com'
 dataForm={'changeLocale': None,
           'appReceiptNum': os.environ.get('uscis') ,
           'initCaseSearch': 'CHECK+STATUS'}
+currentDirectory=os.getcwd()
 url='https://egov.uscis.gov/casestatus/mycasestatus.do'
 r=rq.post(url,data=dataForm,headers=headers)
 soup=BeautifulSoup(r.content,'html5lib')
