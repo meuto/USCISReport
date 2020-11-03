@@ -9,7 +9,7 @@ situacion=''
 comentarios=''
 password = str(os.environ.get('pa'))
 email = str(os.environ.get('email'))
-emailTo='tomeu.clapes@gmail.com'
+emailTo=str(os.environ.get('emailTo'))
 dataForm={'changeLocale': None,
           'appReceiptNum': os.environ.get('uscis') ,
           'initCaseSearch': 'CHECK+STATUS'}
